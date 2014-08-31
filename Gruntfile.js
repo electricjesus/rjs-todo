@@ -94,10 +94,13 @@ module.exports = function(grunt) {
       },
       javascripts: {
         files: 'scripts/**/*.js',
-        tasks: ['jshint:beforeconcat','concat','uglify']
+        tasks: ['jshint:beforeconcat','concat','uglify'],
+        options: {
+          livereload: true
+        }
       },
-      html : {
-        files: ['dist/**/*.js','dist/**/*.css','index.html'],
+      dist : {
+        files: ['js/**/*.js','dist/**/*.js','dist/**/*.css','index.html'],
         options: {
           livereload: true
         }

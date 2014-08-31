@@ -1,0 +1,31 @@
+{
+  "name": "requirejs-test",
+  "version": "0.0.1",
+  "homepage": "https://github.com/electricjesus/rjs-todo",
+  "authors": [
+    "Seth Malaki <seth.malaki@gmail.com>"
+  ],
+  "description": "requirejs-test",
+  "main": "scripts/app.js",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "RRSSB": "~1.6.0",
+    "db.js": "~0.9.0",
+    "foundation": "~5.4.3",
+    "handlebars": "~1.3.0",
+    "requirejs-hbs": "https://github.com/epeli/requirejs-hbs.git#master",
+    "requirejs": "https://github.com/jrburke/requirejs.git#master",
+    "text": "https://github.com/requirejs/text.git#master"
+  }
+}
