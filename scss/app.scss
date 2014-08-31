@@ -6,22 +6,22 @@
 	border-bottom: 1px solid #aaa;
 	margin:0px;
 	padding:3px 10px;
-	color:#999;
+	color:#666;
 	&:before {
 		content: ' ';
 	}
 	button.delete {
-		display:none;
+		display:inline;
 		float:right;
 		margin:0;
 		padding:6px 4px;
-	}
-	&.active {
-		color:#000;
-		button.delete {
-			display:inline;
-
+		background: #fa6;
+		&:hover {
+			background: #f44;
 		}
+	}
+	&.notice {
+		color:#999;
 	}
 }
 
