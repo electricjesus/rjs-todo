@@ -8,8 +8,9 @@ define(['jquery'], function($) {
 		var elem = $(elem);
 
 		elem.on('keyup', function(e) {
-			if((e.keyCode || e.which) === 13) {
+			if((e.keyCode || e.which) === 13 && elem.val().length > 3) {
 				parent.trigger('todo:add', [elem.val()])
+				elem.val('');
 			}
 		})
 
