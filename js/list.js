@@ -1,15 +1,19 @@
 // Class input.js
-define(['jquery'], function($) {
+define(['jquery','components/list/input','db','hbs!templates/items'], function($, Input, DB, template) {
 	
 	var module = {
-		test : function() {
-			console.log(this.elem);
-		}
+		
 	}
-
 	var List = function(elem) {
 		if(!elem) return undefined;
-		module.elem = $(elem);
+		var elem = $(elem);
+		elem.find('.actions input[type=text]').each(function() {
+			new Input(this, elem);
+		});
+
+		elem.on('todo:add', function(e, item) {
+			
+		});
 		return module;
 	}
 	return List;

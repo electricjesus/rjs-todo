@@ -1,1 +1,31 @@
 @import "foundation";
+
+
+.list-items li {
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #aaa;
+	margin:0px;
+	padding:3px 10px;
+	color:#999;
+	&:before {
+		content: ' ';
+	}
+	button.delete {
+		display:none;
+		float:right;
+		margin:0;
+		padding:6px 4px;
+	}
+	&.active {
+		color:#000;
+		button.delete {
+			display:inline;
+
+		}
+	}
+}
+
+.list-items .actions {
+	padding: 10px;
+	width: 100%;
+}
